@@ -19,6 +19,18 @@
     font-size: 48px;
 }
 
+.span-title{
+    font-size: 64px;
+
+    @include responsive(s){
+        font-size: 36px;
+        line-height: 120%;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
 #scroll-down {
     padding: 8px;
 }
