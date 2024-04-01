@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+    height: 72px;
+    background-color: $primary-normal;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: 0.5s ease;
+  
+    z-index: 800;
+  
+    position: fixed;
+    @include responsive(s){
+        display: none;
+    }
+}
+
+.navbar-desktop {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(s) {
+        display: none;
+    }
+}
+
+
+.logo {
+    color: $white-normal;
+    font-family: "Sora", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+
+span {
+    color: $secundary-normal;
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+li {
+    list-style: none;
+
+}

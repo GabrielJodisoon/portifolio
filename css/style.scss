@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "sass/colors";
+@import "sass/layout";
+@import "sass/spacing";
+@import "sass/header";
+@import "sass/typography";
+@import "sass/menu";
+@import "sass/icons";
+@import "sass/buttons";
+@import "sass/animation";
+@import "sass/footer";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    position: relative;
+
+    &::-webkit-scrollbar {
+        padding-right: 2px;
+        width: 8px;
+        background: $primary-normal;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 12px;
+        background: $secundary-dark;
+    }
+}
+
+.border{
+    border: 1px solid red;
+}
+.border-none{
+    border: 1px solid transparent;
+}
+
+.border-white{
+    border: 1px solid white;
+
+}
+
+.border-blue{
+    border: 1px solid blue;
+
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+svg, img{
+    width: 100%;
+}

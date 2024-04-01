@@ -1,0 +1,162 @@
+//hero config
+
+.img-main {
+    width: 250px;
+    border-radius: 100%;
+    max-width: 100%;
+
+    @include responsive(s){
+        width: 200px;
+    }
+
+}
+
+.link-style {
+    font-size: 24px;
+}
+
+.span-subtitle {
+    font-size: 48px;
+}
+
+#scroll-down {
+    padding: 8px;
+}
+
+
+
+
+// skill config
+
+
+figure {
+    filter: invert(27%) sepia(51%) saturate(0%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+
+    &:hover {
+        filter: none;
+    }
+
+    p {
+        color: #000000;
+    }
+
+
+
+    @include responsive(s){
+
+        filter: none;
+        
+        
+    }
+}
+
+
+
+
+
+
+
+// project config
+
+.img-banner {
+    width: 100%;
+    max-height: 420px;
+    border: 2px solid $gray-7;
+
+    background-color: $off-white;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        transition: 1s ease;
+
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.15);
+        }
+    }
+
+}
+
+
+.card {
+    border: 1px solid $black-light;
+    border-radius: 8px;
+    background-color: rgba(21, 27, 38, 0);
+    transition: .5s ease;
+
+
+
+    &:hover {
+        background-color: rgba(21, 27, 38, 0.3);
+
+    }
+}
+
+.thumb {
+    img {
+        transform: scale(1.05);
+        transition: .4s ease-in;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+// contact config
+
+input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    outline-width: 2px;
+    outline-style: solid;
+    background-color: $off-white;
+
+    &:focus {
+        outline-color: $secundary-normal;
+    }
+
+}
+
+textarea {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+
+    outline-width: 2px;
+    outline-style: solid;
+    background-color: $off-white;
+
+    &:focus {
+        outline-color: $secundary-normal;
+    }
+
+    @include typeface-2(p3, desktop);
+}
+
+label {
+    color: $off-white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+
+

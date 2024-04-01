@@ -1,0 +1,83 @@
+
+
+
+.button-form{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    color: $gray-2;
+    background: linear-gradient(224.78deg, #ffcd62  23.12%, $secundary-dark 92.21%);
+    margin-top: -30px;
+
+
+    font-size: 16px;
+    font-weight: bold;
+    transition: 1 ease-in;
+
+    &:hover{
+        transform: scale(1.045);
+        background: linear-gradient(224.78deg, #ecad25  23.12%, $secundary-dark 92.21%);
+
+    }    
+}
+
+
+#scroll-down{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.button-project{
+    width: 130px;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    color: $off-white;
+    background-color: $gray-3;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s ease ;
+
+    &:hover{
+        background-color: $gray-5;
+
+    }
+
+}
+
+
+
+
+// accordion
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: $gray-3;
+    color: $off-white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 4px;
+    text-align: center;
+
+  }
+  
+  .active, .accordion:hover {
+    background-color: $gray-5;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
